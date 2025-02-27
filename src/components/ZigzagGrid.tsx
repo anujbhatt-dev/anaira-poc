@@ -1,17 +1,15 @@
 "use client"
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useCursorStore } from '@/store/useCursorStore';
 import { Product, productsData } from '@/utils/productsData';
 import { useRouter } from 'next/navigation';
-import { Circle, Plug, Plus, Star } from 'lucide-react';
+import { Circle, Plus, Star } from 'lucide-react';
 
 
 
   
 
-const ZigzagGrid = () => {
-  const [visibleProducts, setVisibleProducts] = useState<Product[]>(productsData.slice(0, 12));
+const ZigzagGrid = () => {  
   const { scaleUp, scaleDown} = useCursorStore()
   const router = useRouter();
 
@@ -35,7 +33,7 @@ const ZigzagGrid = () => {
     <section className="pt-0">
       <div className="mx-auto">        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[4rem]">
-        {visibleProducts.map((product, index) => (
+        {productsData.map((product, index) => (
                     <motion.div
                     key={product.id}
                     className={`relative overflow-hidden bg-white shadow-lg ₹{

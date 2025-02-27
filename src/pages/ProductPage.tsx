@@ -2,13 +2,9 @@
 import Product from '@/components/Product';
 import ProductTabs from '@/components/ProductTabs';
 import SimilarProduct from '@/components/SimilarProduct';
-import { productsData } from '@/utils/productsData'
-import { CarTaxiFront, Plus, Star, StarHalf } from 'lucide-react';
-import React, { useState } from 'react'
+import React from 'react'
 
-type Props = {}
-
-function ProductPage({}: Props) {
+function ProductPage() {
 
   return (
     <div className='px-[5rem] py-[1rem]'>

@@ -32,6 +32,8 @@ const Header = () => {
     if (topCat === selectedCategory) {
       setCategoryHover(null);
       setSelectedCategory(null);
+      console.log(subCategoryHover);
+      
     }
     setCategoryHover(topCat);
     setSelectedCategory(topCat);

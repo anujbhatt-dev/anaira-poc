@@ -4,7 +4,6 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { productsData } from "@/utils/productsData";
-import { div } from "framer-motion/client";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,8 +14,8 @@ function HorizontalMarquee() {
   useGSAP(() => {
     if (!HorizontalRef.current || !wrapperRef.current) return;
 
-    let textWidth = HorizontalRef.current.offsetWidth;
-    let viewportWidth = window.innerWidth;
+    const textWidth = HorizontalRef.current.offsetWidth;
+    const viewportWidth = window.innerWidth;
 
     gsap.to(HorizontalRef.current, {
       x: `-${textWidth - viewportWidth}px`, // Move based on text width

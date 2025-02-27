@@ -11,7 +11,7 @@ type CursorAction = {
     scaleDown:()=>void
 }
 
-export const useCursorStore = create<ICursor & CursorAction>((set,get)=>({
+export const useCursorStore = create<ICursor & CursorAction>((set)=>({
     isActive:false,
     innerHtml:"",
     scaleUp:(innerHtml:string)=> {

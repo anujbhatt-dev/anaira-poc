@@ -2,7 +2,7 @@
 import { useCursorStore } from "@/store/useCursorStore";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useEffect, useRef } from "react";
+import {  useRef } from "react";
 
 function CustomCursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
