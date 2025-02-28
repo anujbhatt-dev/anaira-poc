@@ -1,10 +1,10 @@
 import HomePage from '@/pages/HomePage'
 import React from 'react'
 
-function page() {
+function hpage() {
   return (
     <HomePage/>
   )
 }
 
-export default page
+export default hpage

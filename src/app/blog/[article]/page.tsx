@@ -1,9 +1,8 @@
-// import ArticlePage from '@/pages/ArticlePage'
+import ArticlePage from '@/pages/ArticlePage'
 import React from 'react'
 
-export default function page() {
+export default function apage() {
   return (
-    // <ArticlePage/>
-    <div></div>
+    <ArticlePage/>
   )
 }

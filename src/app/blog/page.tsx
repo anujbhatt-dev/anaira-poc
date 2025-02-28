@@ -1,8 +1,7 @@
-// import BlogPage from "@/pages/BlogPage";
+import BlogPage from "@/pages/BlogPage";
 
-export default function page() {
+export default function bppage() {
   return (
-    // <BlogPage/>
-    <div></div>
+    <BlogPage/>
   )
 }
